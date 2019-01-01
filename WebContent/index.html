@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Event Recommendation">
+  <title>What's New?</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#" id="contact">Contact</a>
+      <a href="#">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="logout">Logout</a>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>Event</span>
+        <br />Recommendation
+      </p>
+    </header>
+
+    <section class="main-section">    
+      <div id="input-form">
+        <label for="username"></label>
+        <input id="username" name="username" type="text">
+        <label for="password"></label>
+        <input id="password" name="password-signup" type="password">
+        <label for="firstname">First name:(English letters)</label>
+        <input id="firstname" name="firstname-signup" type="text">
+        <label for="lastname">Last name:(English letters)</label>
+        <input id="lastname" name="lastname" type="text">
+        <button id="signup-btn">Sign up!</button>
+        <button id="login-btn">Login</button>
+        <button id="back-btn">Back</button>
+        <button id="finish-btn">Finish</button>
+        <p id="error-msg"></p>
+      </div>
+
+      <aside id="item-nav">
+        <div class="nav-icon">
+          <i class="fa fa-sitemap fa-2x"></i>
+        </div>
+        <nav class="main-nav">
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Nearby
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> My Favorites
+          </a>
+          <a href="#" id="recommend-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommendation
+          </a>
+        </nav>
+      </aside>
+
+      <ul id="item-list">
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    <p class="title">Contact Me</p>
+    <p>"Send hate-mails concerning the inferior website design."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Yiwei Zhang, CA</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p id="email-addr"></p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 858 366 8365</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
